@@ -386,7 +386,7 @@ function jsvedioreward20() {
 
 
 
-//function jsdailysign() {
+function jsdailysign() {
     return new Promise((resolve, reject) => {
         const url = "https://ocean.shuqireader.com/api/activity/xapi/signin/v5/signInAction";
         const headers = {
