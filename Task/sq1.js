@@ -1,5 +1,3 @@
-
-
 const jobname = 'shuqi'
 const $ = Env(jobname)
 
@@ -26,7 +24,7 @@ async function all() {
     //await $.wait(1000);
     //await read();
     //await $.wait(1000);
-    await share();
+    //await share();
     //await $.wait(1000);
     //await receive();
     //await $.wait(1000);
