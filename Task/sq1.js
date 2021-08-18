@@ -426,7 +426,7 @@ function dailysign() {
     return new Promise((resolve, reject) => {
         const url = "https://ocean.shuqireader.com/api/activity/xapi/signin/v5/signInAction";
         const headers = {
-            "Origin' : `https://render-web.shuqireader.com`,
+"Origin' : `https://render-web.shuqireader.com`,
 'Accept-Encoding' : `gzip, deflate, br`,
 'Connection' : `keep-alive`,
 'Content-Type' : `application/x-www-form-urlencoded`,
