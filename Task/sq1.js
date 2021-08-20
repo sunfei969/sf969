@@ -4,6 +4,15 @@ const jobname = 'shuqi'
 const $ = Env(jobname)
 
 
+
+var str = "$@$"
+var regex = /\s+|,|@|#/;
+var strAry = str.split(regex);
+for (i = 0; i < strAry.length; i++) {
+    console.log(strAry[i]);
+}
+
+
 !(async () => {
     await all();
 })()
