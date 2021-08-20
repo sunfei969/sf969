@@ -24,16 +24,16 @@ async function all() {
     //await $.wait(1000);
     //await drawreward();
     //await $.wait(1000);
-    //await read();
-    //await $.wait(1000);
+    await read();
+    await $.wait(1000);
     //await share();
     //await $.wait(1000);
     //await receive();
     //await $.wait(1000);
     //await jsdailysign();
     //await $.wait(1000);
-    await jsvedioreward20();
-    await $.wait(1000);
+    //await jsvedioreward20();
+    //await $.wait(1000);
     //await  jsvedioreward10();
     //await $.wait(1000);
     //await  jsshucheng();
@@ -41,8 +41,93 @@ async function all() {
     //await jsshare();
     //await $.wait(1000);
     //await jsread()
+    await $.wait(1000);
+    for(let i=0;i<10;i++)
+    {
+        await vedioreward426();
+        await $.wait(1000);
+    }
+    await $.wait(1000);
+    await read426();
+
 }
 
+
+  function vedioreward426() {
+    return new Promise((resolve, reject) => {
+         const url = "https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/";
+         const headers = {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Host": "api-access.pangolin-sdk-toutiao.com",
+    "User-Agent": "Mozilla/5.0 (iPad; CPU OS 13_2_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+    "Content-Length": "4717",
+    "Accept-Language": "zh-Hans-CN;q=1"
+};
+        const body = "{\"message\":\"2T4KF51KH9JUhj9n77RqbdMShmTnQ\\/klmmXFKxWWdwy1N0zkcdGdu6FtG6psxnH6SJde11iQheCVVwR5Ix475m5BTUPdtnEpkPOWUwbubUrn3tacV2fwkoOmdZPSNjSsmjEEB+YAhw7kOisLnhrz4CJ8Y\\/sm3GU+Hc\\/10weUPCLwWoxdOXTHYIiFbSz9X1yeX0r61GdT9t6kN6gAFif4JqMaQFX1C01LRPFXhhGNp37Z56FRR4riLsJfx+xwq+lWdjOEzxNyK9bMExX1\\/8uqN0N1mo2tupPlp8zVxTEzdhGNTZpCzq5PSmbrExM18LXkSXqmA4idzRHHPS1Ok4Lbi4jSdQrmIUfPu\\/8O8YGCZ6k5c+hOJoLgRxijlCPuXfVZfPAW4S3d9YVTlewnnL99XTMHe6MOWgh32gf2RBKkk5u4VgHYCUfa2ZGAruAROaHP6L71c8KU7nZuWwxyBNfMRgzV4UOFTNh3ZKMlBja5F6tmrkyJIIJ9bzJVuzkDNZ+yScZQoIZswHpbucpUCdH+RC3IrKI6Qhbc\\/qmVUQpQ0mAiVheMpI4zyNzCbNtgIOpULuzHc3Bnt6PHU0bn2nuoHzfkpG\\/H9b24r3BIEtIEyVg6+2S42S+UqWDM9Q8QHZagKzoH9F6bLXBFEF4ig1yHFjPmASGZkjUUmMB86Re\\/Hb6u6cK3XsYZWTax2MtugujkuPdV8LuPS85wjEbNRvugpJ0TPym1feV5pG4Dr8aSY5N41aDIemZdKN9IxFw+KZ\\/2\\/IJofJaYVlTLtfn+55EWNaZNF+gmnU+IvNsdK\\/TxHx+FhyGgdltgTVBdPNM96pLz1E7iW3FBb3IqpFfYVAuGJ56le\\/PoQW6CBT8eKydMxxbCefUAZ7Rx4oab5zL3F7GTW4Z\\/fUxVDDa\\/elUoVNecYi4GHeAxApNlIPdP+2rGHZiRieyGA25SBIfpEufbZ+2mT\\/pC7BXS1IveeqgWLDKdRfnQWE1c3nBUQW1HoVFSNRY0zK299e9ZT1DfTdGiTMPYs3n1PQkG9t4fqDrp1OlHOd40T6steLhKS96qRVRr1a5OisyQc1GWBEnu4Sv1fsQ+UwcuMNX+2LHF08mnRiKv2md7ptzs1u6\\/sxbcGLeietBRf+5eGmMc9jlikg03yAmzBiLFqJLXhsu1Gw9FTXdEzuVzzFQHYFaGlRuU7iJ+7mugf5YDffQzSZp1HJVVUdRqUDTvYog7KtlctkPgsxV+EvxR9N08ZN9AJuRcl0kHjYpgVtQ920SYJDImHsEzt3Hg5gWzS7X1\\/oDXiXKdkY\\/YBDkO1Wp1nC0\\/aW8QnOhf1vm4PviY1bKPonTDnUKmgvUAruVyG1tpO87E2d\\/MwXVFm2yRet9UGE9zeLSI\\/rvtgrmp5oLrcCW6v8TeRkd8GQl7qM3LYyUH8HjajczBHBg1o5hBT9fjegGQf62dwKcFgYYBJhobIEtRZJe7GMeSaMyrIj+hGi9dnzy0ise1O9tnHg9BcoYP1Mc3x4+sJRb3M9PeUQmfjZu7NIERvlXIXll2C8wTOaFptK+nfuU9T9c+wBEx8L4Mbp9IU5Y6yaWZSHG1CPDgSN6rMMbv6cxg+KuL5zKmk03kP+lDOWi7IBvV8sIk0Yn0MzzD27xBHnjFFSUF6OorZclixAZs5hAaHnYofc2dWcNI3Cd1XJaaGcKlp1b9riMCpk3izL+zwA8MEewdPAjacm\\/8pOphO8Kd15rkqQyNxTI5Zd4lhA9iGTFRVQihpfN7cDntm7oeB11x3vobqoy9nfuzy+4YG0OHgWWwNUtqgVce6yVtEHGro3CFYLVCezqe4CRND8jfmZUFcrgwW\\/48YiDad6NnWHNDIfbTVVfCYvP0hZqvP6K9JBEooDHfXgFwfvCGUYrDXKOQyMq5OayK+nkTEvYA9NRC0bCqKoP8yCrKxnzzC6EZqlqOz8NFVeCZjOtzqrRCouYqmdOdAGRRUiOl0n8PGuBgKOuIbjG9R\\/5eVDNmzYgywCj8i3Fhb77HImGRpdgH+JLGPqOzcmwXjg1gd26ZqtqohxdP5LA7rAemcCU8uFpybdLfSWrtfN3blGIhSOns4zuBRbyHhZ93m6s9Irqr0mLr96LG3aQUEqG10aZRaDjiVr8eiKZDX1wgF4vblmexydkHss14qTvwvlz\\/Pm\\/0FnwYRKa6xuVF85hJGRxdg7FIMbomg1Rg22GZRneKk+vA8xJbIDOt0mbvzEtM0ErxbTdrwB03SF+SM0Tmp5yvGu6YNtuwudcGx2hCy8zKA+9ErCEFhC5UrM7Noyw3cpOGon6JicrvuZC4rmMNjHGbV6zrhygum49RxsQEHqM1tGF9VDv5HFR6PuLFg\\/L\\/Sx9DoO9N+f14n47W3NingT6QJnFy\\/Fsb\\/TgcM6BE8HzNHE2d636VvwHLxCNLnl\\/PJPGT8DMMsslfq0mfHzdszhJRQhyhOt57C6gAgjZZFwuT3v2mynE6UTtEVXuRwJNp5wvyPTtnRwHZYL0VYolCB2K+GO5BOH7+vVEx4jL\\/nMtDzBWSLehNSc6akEe004djfkUif626om5yWcmMlBzhY52q+9GPV8IWGMZjKVoof591KvsVmYZGar+XMYpqUAW\\/044SAtPls4N\\/iMJ1WuAzJGY0H4EKcpcF\\/ZMqQitbOrLcqfLhSYtHN24WntoqT6WGmlgYgv2UaV6pzxH+hngbxqHYuG5K2eNAssuMPnGEVkBt3Xrgh\\/ZJhQM0TTzNyw0ptmUdmFh1cXIgGBSKylnPijGdYniIw02hk7SqYWrqWHMxQSJt0cnMQFUwB1GvW3BfwgezAPxMLF4iwK2Wt4vy8Ay0qWVJzBAtNbltLAwrBjd8RAjRqisxrQvJbo7v8\\/apFwThABXj5B1nBuRH+BKdk7p2QTAZpLdQDIx9rRINBkB2ECo3LuOsKeF93TEtQYgfh+5kHzkdyeGyEkkwba6ExhAZVFSPhabADZh1ZLSgTLeIUPDZcTrhs+hE6sclCzGsVXqT1AZeX2vP2vpTAh7IB1RppIH32zqxKWxLtO10GOnvcmnAqmUGsBWIG47hG7jG8dwpA9i\\/E48eWh4Hwlkxp44UMqsi3QwUzBBggBE1CjWgDns0\\/17nPxYHxgK4F7\\/j3weRsbDEX0nftEx\\/EBnw4bHwFcEE8WR7eckb0ybtyeHwVuIcXP61pfGbSIiZa+fZZgzhpsFjnoo48qU6izBaoW0kvm1ecT8nmmKH\\/ADm34iJLduDQ+uIHUfxo6N5NjHyB6M8Dw+q1efUEVA7T0Fmqy8TTspY4AlZOHQedOOyBJ8ifIGgXIBAxbIR79q+sBu2PMBZLFgSIoK3w7bxIxah195TG5aAggZWVcXJlS\\/g4oBl+tQvZRPVYXn+BZN8wT2K5GOge5TEuA1dTLpLTnjIkWIt5l7H\\/5rUy0SkBMNTVSLR\\/dMR4CVDjrLXfIj\\/95IFgTkXwUWtxnr10TWI6eIOlFBjFMZJdHuk4+M8ACHHmKGjB7T+nfueGjUjWAaCOXJYGSWqU5fSLCd20GgnGDW1U8iP1yKHE1jc\\/CJvsLo4LpKptpZPyM5coLx+u8unBB087C5m1E5ULNpErrXb14nWqQGWd7nleKigc\\/uLdyeuKTuDDunRQQSTD1JQvmJgfLtYeULCAqE6XdczJMAhR1if5XzxRDr3FLTgvTNAYK7Uc+F4CExRU7A9Wq+wetpHCZPe+Q+CzLvGa12dBgB3WiaPFfkq4iUneTm6GoVisAU8zW3eHtgC6dj\\/WFGvy\\/B8VyRyVWXZGhDVC0TnnVIERXL+XmYwr9GAhn8U4iWfJvq+jyJZeS\\/zMjDUZepjYVvVkf1JLOZO45yWkepbhI0XA2yfo9ULasMjk32frw1T5wMEfhqJbjWpB7mXfkW9VFgXITB1djUrrm499kuBnFaZh9lQ4jToMd3L6EdGyQECRUvXYQ8QNeUOpHmHQI3NK725AZ8+YIDlaTUgrignaphrqQ7YRpqNTabVlEPygM3ljhS3JXAqn4Y9wG5EFdTiB8nvdoa3SUGVIW68MhKo9WgVr\\/IlafxxMGwBCr4Ov38EVB7MPPH25\\/MFi3v4pnS8NLDKX0+Ob\\/XJuK\\/VY3mqSfVvSOCHDm527qC2SOS4fGBf1J+vSJCvJ26V3v+up1OaA\\/erWOEK8A6PFFmbpZwudx\\/8qwiMI2bOrSYNDzWSjmtQaMnD0VlRmlnIPiNc39bKpv\\/x8\\/R68ldA8vaRpUhy4j93twMyjhvtf1DlU2rKsgllLQASioLPGvbFpIy0u0YHMS1dC1G2Do5OOQspnXLyHuebLLHKs2jwOQrOyioFs5Ke1GqFY0swargrFXqRZN8Vu+pFlUBsRlo8tFqlTmHGdmasHjb79RknjrtKHdcLoxHIkmjODMAxW\\/ZwKGIBkX3au9BFgDGhWbl9\\/SLQOe7fjig+wyrCUG\\/atsPFCfQvrISj8EaUCTqKG0CwacDlMr3\\/BYh\\/XljHR2MBkLeHbtXpLA\\/6ggKX4VIEkhCt38bjUYiNWQczT9KqUDV8s2JcvOZeSvLGiKlVu\\/GBQ4KTHcCjEAfYWy\\/JTX2VcsZJQErfI3pM0l30fEuyqwrWEKVK4jcuRhgJDqkPrLl4cOz4YXWiqdUdCHnj7fkbOYkRw\",\"cypher\":2}";
+        const request = {
+            url: url,
+            headers: headers,
+            body: body
+        };
+
+        $.post(request, async(error, response, data) => {
+            try {
+                $.log(data);
+            } catch (e) {
+                $.log(e)
+            }
+            resolve();
+        })
+    })
+}
+  
+
+  function read426() {
+    return new Promise((resolve, reject) => {
+         const url = "https://ocean.shuqireader.com/api/ad/v1/api/prize/readpage/pendant/lottery";
+         const headers = {
+   'Cookie' : `isg=BCsr_cV7zm0EUxI5IFHrEkd_sEsVQD_CZtaelZ2ooWorPEyeJRGgEweMkPpSB5e6; cna=hZumGbBkenYCAdoaNnJol3B4`,
+'Accept' : `*/*`,
+'Connection' : `keep-alive`,
+'Content-Type' : `application/x-www-form-urlencoded`,
+'Accept-Encoding' : `gzip, deflate, br`,
+'Host' : `ocean.shuqireader.com`,
+'User-Agent' : `shuqireader/4.2.6 (iPhone; iOS 14.0.1; Scale/3.00)`,
+'Accept-Language' : `zh-Hans-CN;q=1`
+};
+         const body = "_public=skinId%3D999%26idfa%3DFA83D0D2-0895-482A-8B1B-48011F454733%26ustatus%3D1%26first_placeid%3D111111%26net_env%3D2g%26umidtoken%3DYFHvkSdla5UDAO0ygGI6DM3/%26user_id%3D2038268844%26sn%3DC1F3B9E12724162869F18F9CCB7E4CE361047973%26placeid%3D111111%26msv%3D8.0.0%26brand%3DApple%26imei%3D07CBD4AFEF888A4F58D65BD337D482ECE9566F5D%26skinVersionPrefix%3D1%26appVer%3D4.2.6.0%26skinActiveColor%3D0F9970%26manufacturer%3DApple%26session%3DeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyMDM4MjY4ODQ0IiwidXRkaWQiOiIiLCJpbWVpIjoiMDdDQkQ0QUZFRjg4OEE0RjU4RDY1QkQzMzdENDgyRUNFOTU2NkY1RCIsInNuIjoiQzFGM0I5RTEyNzI0MTYyODY5RjE4RjlDQ0I3RTRDRTM2MTA0Nzk3MyIsImV4cCI6MTYyOTk4NDM4NywidXNlcklkIjoiMjAzODI2ODg0NCIsImlhdCI6MTYyOTQ2NTk4Nywib2FpZCI6IiIsInBsYXRmb3JtIjoiaU9TIn0.1FjdHzTzSffry2bDYlnpY-JcbtsEb_PQVM0_AfMBA3hrXDP4kHgt8WkodW5xJ1vszbvY3LDPVs9YhphKayDSKQ%26skinColor%3D23B383%26platform%3DiOS%26ver%3D201102%26mod%3DiPhoneXMAX%26statusBarHeight%3D44.000000%26skinVersion%3D1%26wh%3D1242x2688%26soft_id%3D21%26utdid%3DYFHvkSdla5UDAO0ygGI6DM3/%26utype%3Dvip%26sdk%3D14.0.1&deliveryId=531&key=sq_app_ad&miniWua=HHnB_4juLeL93EjawZyp26sqUQAr9DiqU2hfVmofxttCxQGmFIleQhJvqFlXhM07QdqxsA6mWFtNbg7GSGlyHLmk3EfRZOPnowIPnqxrXSB1y44j0/QgdYeGK3/FA0MdXnsxz&reqEncryptParam=%3A&reqEncryptType=-1&requestSrc=shuqi&resEncryptType=-1&resourceId=678&sign=7A6C9AD3C77CA57EEBBF5D7D3F207F30&timestamp=1629466105&userId=2038268844&wua=HIVW_esHGR2jO7aedPvN%2BvfW/UWSyhbuzZ83Wp/IJdB6R%2Blh6V1yiywzMn6%2BsKv3NkedxP0XilDFWC8qQnusAflo464g2K016PPOkZi5IYj6O8WKOu604aJXnyDFd0goJLRv%2Bh%2BMu7kHIn5HcFukkTvQUBv2FztobvdAFHST3uzXtkrrt22loAbiskcQsZH01KSMfOhZ%2Bf/tiBQ9SLZpJzAoYLhcxWoOn%2BBKSCiypIjfC2U0EMv0zxtoFbZYNxIRJ2CSHPya57QWquxaSF6w4b4Vbjcp1f2NrH8%2BW5kUrTxh0Xf0pm5/sVlGZNcgUVC2skML%2BsgYEB6Giw%2B9e29mXn5g/epQ0RqTrNeAa9DKxGWYsi%2BJjTwRBsCoOLaZwoh4ilsQqBx0/Wj0FiVlThAq%2BjAwCkA%3D%3D";
+        const request = {
+            url: url,
+            headers: headers,
+            body: body
+        };
+
+        $.post(request, async(error, response, data) => {
+            try {
+                $.log(data);
+                const result = JSON.parse(data)
+                if(result.status==200)
+                {
+
+                    if (result.data.chanceCurrentCnt < result.data.chanceMaxCnt)
+                    {
+                         await read426();
+                         await $.wait(500);
+                    }
+                }
+
+
+            } catch (e) {
+                $.log(e)
+            }
+            resolve();
+        })
+    })
+}
+  
 
 function receive() {
     return new Promise((resolve, reject) => {
@@ -346,16 +431,16 @@ function jsvedioreward20() {
     return new Promise((resolve, reject) => {
         const url = "https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery";
         const headers = {
-          'Cookie' : `isg=BDs775L23lmTOeN8hvwuwYoXwBulkE-SRA9aPy34MTp_jFxutWHQ4BSOoqrCt6eK; cna=95WOGVcAHHsCAdoaNlnYWmkk`,
-'Accept' : `*/*`,
-'Connection' : `keep-alive`,
-'Content-Type' : `application/x-www-form-urlencoded`,
-'Accept-Encoding' : `gzip, deflate, br`,
-'Host' : `ocean.shuqireader.com`,
-'User-Agent' : `shuqifast/1.0.5 (iPhone; iOS 14.0.1; Scale/3.00)`,
-'Accept-Language' : `zh-Hans-CN;q=1`
+            "Accept-Encoding": "gzip, deflate, br",
+            "Cookie": "isg=BGVlQ4WMaHwfsIy2RLnZ3-MMfiWfohk0V9tMJGdKLxyNfojwL_LUBu9cDGQI5THs; cna=BXqeGVTd73sCAatTLPUxYOJB",
+            "Connection": "keep-alive",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "*/*",
+            "Host": "ocean.shuqireader.com",
+            "User-Agent": "shuqifast/1.0.5 (iPhone; iOS 14.6; Scale/3.00)",
+            "Accept-Language": "zh-Hans-US;q=1, zh-Hant-HK;q=0.9, hi-US;q=0.8, en-US;q=0.7"
         };
-        const body = "_public=idfa%3DFA83D0D2-0895-482A-8B1B-48011F454733%26ustatus%3D1%26net_env%3D2g%26umidtoken%3D9xVLZa9LOlt7NDV7YI4beoFH4l1WCLv8%26placeid%3D111111%26user_id%3D2924069247%26sn%3D83319A9114DB9C88B754508D9A51F689639B124B%26msv%3D10.0.0%26brand%3DApple%26imei%3D98F9E87966D25F87CB378699F83BAA52F8406791%26appVer%3D1.0.5.0%26manufacturer%3DApple%26session%3DeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyOTI0MDY5MjQ3IiwidXRkaWQiOiIiLCJpbWVpIjoiZmFzdF85OEY5RTg3OTY2RDI1Rjg3Q0IzNzg2OTlGODNCQUE1MkY4NDA2NzkxIiwic24iOiJmYXN0XzgzMzE5QTkxMTREQjlDODhCNzU0NTA4RDlBNTFGNjg5NjM5QjEyNEIiLCJleHAiOjE2Mjk2MzQyNTgsInVzZXJJZCI6IjI5MjQwNjkyNDciLCJpYXQiOjE2MjkxMTU4NTgsIm9haWQiOiIiLCJwbGF0Zm9ybSI6IjExNiJ9.IgCtWGo0MCH-fSTkCPHZWI-htu0ZX3lSA9p5RQUCvQrMrAq6wL3J7_FPwv_5unh8o1olMAsGRbcGZnSLpR_ZJQ%26statusBarHeight%3D44.000000%26platform%3D116%26ver%3D210331%26mod%3DiPhoneXMAX%26wh%3D1242x2688%26utype%3Dvip%26utdid%3DYFHxHI7aGywDACetI8Soa4Ej%26sdk%3D14.0.1&deliveryId=974&key=sq_app_ad&miniWua=HHnB_X3i4UEQcU4ypRKUp28E4O4Pk%2BJjR1CMS8ZoCZI8GOHJ%2BIgU5gOR0mWvTOdrY3VW3eJ%2BqmTe5UJ6R8idU1F0FYlvd4%2BE6hEVqClZRofTeJP59dgJ7LMXxxWQGKiASSaCswlzhXjen0qEqaM6blV/vLw%3D%3D&platform=116&reqEncryptParam=%3A&reqEncryptType=-1&requestSrc=shuqi&resEncryptType=-1&resourceId=720&sign=DE4C40B27FA0243946C6D134A964F9A3&timestamp=1629456062&userId=2924069247&user_id=2924069247&wua=ktgi_KwEH7bZ7wLNJD6SwEyshJJ7kq6R9LDAGSG0jxfBRMZ/hKms9dG3NrZq8xYZ%2Bm1m3nLUgz9TpVaszuREJoec5NeDGXjs%2B/8p6%2BeBhwSLMFk%2BSCJ56NKJopiLql27BYeptR0Cf9O1NguxOL7F3bfWNu2lxZK4E9TQ6w24JgB%2B5Uo3ObHJ8p%2By975rDpEPUXAcSnFDnGDeJNwZ52C3Z1LZr9ofomnfiOadcTwub6ZyA3uB99oUevBi49u0myYBUmt75CpXhKNmym/e5FPeOfHpN/v6PMN3qLXkR4I8J5aoHYvTPM9LNLKQ5O%2BhedxO90HZJcppookRx%2BV%2B41BSPK8scChEF3qoYwrcRPnG76JUhwJINqh%2BXMXNIchJ7qLUDX%2B9AhSs2yn/iEuutnAUEspWLzg%3D%3D";
+        const body = "_public=idfa%3D00000000-0000-0000-0000-000000000000%26ustatus%3D1%26net_env%3Dwifi%26umidtoken%3DCJFLLxhLOp%2Bu3zV7QyKs806Y%2BvW9YrOA%26placeid%3D111111%26user_id%3D2916901745%26sn%3DE92DD36C442DA62AA22EF6B3333F044F331EA5AC%26msv%3D10.0.0%26brand%3DApple%26imei%3DF4272D0D67994A9AD162B30B05698204BD8445A3%26appVer%3D1.0.5.0%26manufacturer%3DApple%26session%3DeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyOTE2OTAxNzQ1IiwidXRkaWQiOiIiLCJpbWVpIjoiZmFzdF9GNDI3MkQwRDY3OTk0QTlBRDE2MkIzMEIwNTY5ODIwNEJEODQ0NUEzIiwic24iOiJmYXN0X0U5MkREMzZDNDQyREE2MkFBMjJFRjZCMzMzM0YwNDRGMzMxRUE1QUMiLCJleHAiOjE2MjkwMDEzODcsInVzZXJJZCI6IjI5MTY5MDE3NDUiLCJpYXQiOjE2Mjg0ODI5ODcsIm9haWQiOiIiLCJwbGF0Zm9ybSI6IjExNiJ9.Tm6DmTEVrc_PNRMR-fMouAqqdm9DBIJi_hYurOOaDHZJg2Qxm81N9PxKWggtzrwgkSPgoOJhBxehhLKFFvCMBg%26statusBarHeight%3D44.000000%26platform%3D116%26ver%3D210331%26mod%3DiPhoneXS%26wh%3D1125x2436%26utype%3Dvip%26utdid%3DYAzuwNlmZUMDAP8Knq70D7M9%26sdk%3D14.6&deliveryId=980&key=sq_app_ad&miniWua=HHnB_%2BNXh03V1/aLva2aESnRsb3Vid9f3uBac5KaDmUx%2BeF4aO8r%2BPK%2BdtIDQRNlAiX9%2BBzgBl4kySlkbugT19uUSqowDQD76xTiKbyQKaO4obKaLgr18733BJewaxPOMO905&platform=116&reqEncryptParam=%3A&reqEncryptType=-1&requestSrc=shuqi&resEncryptType=-1&resourceId=717&sign=CE4FF05F51CF37FE111372001FDFCA39&timestamp=1629015259&userId=2916901745&user_id=2916901745&wua=ktgi_T5TSslcG8S40FfQ7ghBeeMC00V1KvqIp3gVIa4J/GYX9idgk6SrlViY7Odxg/clKzJwVYES6U77CB3B1Ml5OX%2Bei%2Bd0Af1k4zhg64iDJt5Jt0j8pCFz3AY94ki%2B%2BHnmSyR4a2Kd/RfCQXKhf7FSmTiB5vAHhPrb3aSL7vRoiX3EpPgU96iMXDIx0V9NW1PtH0YPwoRFOiYR4BQPEBq6qsOFbJ7TRkFti4RCqJs9uQr4y8MRtC%2BG85cCrnouExTP6mcVVftnplrkTTJYQwIS5CnV4uZilnd949q8be2eXJ1MzsyYBCpKbb7PW3il1df6j";
         const request = {
             url: url,
             headers: headers,
@@ -392,17 +477,17 @@ function jsdailysign() {
     return new Promise((resolve, reject) => {
         const url = "https://ocean.shuqireader.com/api/activity/xapi/signin/v5/signInAction";
         const headers = {
-            "Origin" : "https://render-web.shuqireader.com",
-            "Accept-Encoding" : "gzip, deflate, br",
-            "Connection" : "keep-alive",
-            "Content-Type" : "application/x-www-form-urlencoded",
-            "Accept" : "application/json, text/plain, */*",
-            "Host" : "ocean.shuqireader.com",
-            "User-Agent" : "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 AliApp(shuqi/1.0.5.0) WindVane/8.6.1 Shuqi-Lite (iPhone11,6__shuqi__v1.0.5.0) 1242x2688 Winding(WV_3) WK",
-            "Referer" : "https://render-web.shuqireader.com/render/lite-welfare/page/golden_house/?from=ShuqiTab&serviceWorkerOn=1&stopPullRefresh=1&sdk=14.0.1&ustatus=1&umidtoken=9xVLZa9LOlt7NDV7YI4beoFH4l1WCLv8&net_env=2g&placeid=111111&user_id=2924069247&sn=83319A9114DB9C88B754508D9A51F689639B124B&msv=10.0.0&brand=Apple&imei=98F9E87966D25F87CB378699F83BAA52F8406791&appVer=1.0.5.0&manufacturer=Apple&session=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyOTI0MDY5MjQ3IiwidXRkaWQiOiIiLCJpbWVpIjoiZmFzdF85OEY5RTg3OTY2RDI1Rjg3Q0IzNzg2OTlGODNCQUE1MkY4NDA2NzkxIiwic24iOiJmYXN0XzgzMzE5QTkxMTREQjlDODhCNzU0NTA4RDlBNTFGNjg5NjM5QjEyNEIiLCJleHAiOjE2Mjk2MzQyNTgsInVzZXJJZCI6IjI5MjQwNjkyNDciLCJpYXQiOjE2MjkxMTU4NTgsIm9haWQiOiIiLCJwbGF0Zm9ybSI6IjExNiJ9.IgCtWGo0MCH-fSTkCPHZWI-htu0ZX3lSA9p5RQUCvQrMrAq6wL3J7_FPwv_5unh8o1olMAsGRbcGZnSLpR_ZJQ&statusBarHeight=44.000000&platform=116&ver=210331&mod=iPhoneXMAX&wh=1242x2688&utype=vip&utdid=YFHxHI7aGywDACetI8Soa4Ej&idfa=FA83D0D2-0895-482A-8B1B-48011F454733",
-            "Accept-Language" : "zh-cn"
+            "Origin": "https://render-web.shuqireader.com",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "application/json, text/plain, */*",
+            "Host": "ocean.shuqireader.com",
+            "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 AliApp(shuqi/1.0.5.0) WindVane/8.6.1 Shuqi-Lite (iPhone11,2__shuqi__v1.0.5.0) 1125x2436 Winding(WV_2) WK",
+            "Referer": "https://render-web.shuqireader.com/render/lite-welfare/page/golden_house/?from=ShuqiTab&serviceWorkerOn=1&stopPullRefresh=1&sdk=14.6&ustatus=1&umidtoken=CJFLLxhLOp%2Bu3zV7QyKs806Y%2BvW9YrOA&net_env=wifi&placeid=111111&user_id=2916901745&sn=E92DD36C442DA62AA22EF6B3333F044F331EA5AC&msv=10.0.0&brand=Apple&imei=F4272D0D67994A9AD162B30B05698204BD8445A3&appVer=1.0.5.0&manufacturer=Apple&session=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyOTE2OTAxNzQ1IiwidXRkaWQiOiIiLCJpbWVpIjoiZmFzdF9GNDI3MkQwRDY3OTk0QTlBRDE2MkIzMEIwNTY5ODIwNEJEODQ0NUEzIiwic24iOiJmYXN0X0U5MkREMzZDNDQyREE2MkFBMjJFRjZCMzMzM0YwNDRGMzMxRUE1QUMiLCJleHAiOjE2MjkwMDEzODcsInVzZXJJZCI6IjI5MTY5MDE3NDUiLCJpYXQiOjE2Mjg0ODI5ODcsIm9haWQiOiIiLCJwbGF0Zm9ybSI6IjExNiJ9.Tm6DmTEVrc_PNRMR-fMouAqqdm9DBIJi_hYurOOaDHZJg2Qxm81N9PxKWggtzrwgkSPgoOJhBxehhLKFFvCMBg&statusBarHeight=44.000000&platform=116&ver=210331&mod=iPhoneXS&wh=1125x2436&utype=vip&utdid=YAzuwNlmZUMDAP8Knq70D7M9&idfa=00000000-0000-0000-0000-000000000000",
+            "Accept-Language": "zh-cn"
         };
-        const body = "clientTimestamp=1629456066&position=601&signInType=2&wua=ktgi_CPeCtnXkDsRQcM4QeuSRxNW4%2BdWCTGvHaVUE1g%2BsGcTwIH7eG3wswCBVCXJzOxY8Vg2nyenviN4MT8G2i0v5bzVL%2BopzcOt4qzveegRJ7EBUqqjvPyv9D0mheoDjBBKxgv6xTUZb5k%2FleFqUuiWo4olDOmyL6RMLtV3KBAl2DYYe%2B%2F6fZWkwg5P0d6fEQ7C3cJmgikrH3ibhw8D19Wtl%2FXZP%2FxgGBbLInIB6bGsInX1ZzvIatWNoaPPYHcO%2B%2FkGwbqmpuXllIGmsZm1dovb2tFvVRSMqNnbXO8gTrVC4MutIPlqzNM3686MqkF1GuDgKvxAF5RWgQTPkS8K%2F05dBWHlS76inM%2FuEUYYJafBoeO8NzqzaeSOlW4iM%2FZ6OhyJtHw3TG541N0h0BQjy4OiHng%3D%3D&ua=&miniWua=HHnB_Eux1lF3Vq0MYsCfmHOR4bNE40qhS5RK9xc06PsOc89%2B7N6gNTQF3ps5WPVio5raExLyhN179s23BLfq8oIjy4OIFOLR1QO10pnbyg6TzmyH6RxKjhHuHkxfQXWhrE2M5Pmfdw%2Fb7jTANpJHuVQP2eQ%3D%3D&userId=2924069247&umidtoken=9xVLZa9LOlt7NDV7YI4beoFH4l1WCLv8&secureDeviceType=ios&secureAppName=wenxue-activity-proxy&platform=116&appVer=1.0.5.0&placeId=111111&timestamp=1629456066&sqSv=1.0&sign=887fbc88708b241540faa0f054bbc3aa&key=sq_h5_gateway&_public=from%3DShuqiTab%26serviceWorkerOn%3D1%26stopPullRefresh%3D1%26sdk%3D14.0.1%26ustatus%3D1%26umidtoken%3D9xVLZa9LOlt7NDV7YI4beoFH4l1WCLv8%26net_env%3D2g%26placeid%3D111111%26user_id%3D2924069247%26sn%3D83319A9114DB9C88B754508D9A51F689639B124B%26msv%3D10.0.0%26brand%3DApple%26imei%3D98F9E87966D25F87CB378699F83BAA52F8406791%26appVer%3D1.0.5.0%26manufacturer%3DApple%26session%3DeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyOTI0MDY5MjQ3IiwidXRkaWQiOiIiLCJpbWVpIjoiZmFzdF85OEY5RTg3OTY2RDI1Rjg3Q0IzNzg2OTlGODNCQUE1MkY4NDA2NzkxIiwic24iOiJmYXN0XzgzMzE5QTkxMTREQjlDODhCNzU0NTA4RDlBNTFGNjg5NjM5QjEyNEIiLCJleHAiOjE2Mjk2MzQyNTgsInVzZXJJZCI6IjI5MjQwNjkyNDciLCJpYXQiOjE2MjkxMTU4NTgsIm9haWQiOiIiLCJwbGF0Zm9ybSI6IjExNiJ9.IgCtWGo0MCH-fSTkCPHZWI-htu0ZX3lSA9p5RQUCvQrMrAq6wL3J7_FPwv_5unh8o1olMAsGRbcGZnSLpR_ZJQ%26statusBarHeight%3D44.000000%26platform%3D116%26ver%3D210331%26mod%3DiPhoneXMAX%26wh%3D1242x2688%26utype%3Dvip%26utdid%3DYFHxHI7aGywDACetI8Soa4Ej%26idfa%3DFA83D0D2-0895-482A-8B1B-48011F454733";
+        const body = "clientTimestamp=1629015222&position=601&signInType=1&wua=ktgi_8VRO4TruIk1p8M2lu4SpGEzaHDS8yDsvLX9ElOXbMfnd1LjNgtGaPI9uVGeguslQPCNovWQkeiNgYg045ifWzfTHH2HwwhOb0hB07utbFqcSDMCzPCnYkR2%2BKfo%2FvaTJEFwsY1u0piLOQPACgubCVhTE4tZhr2w5PB7PWngoJMmoveydRzSmypRS%2BsTvsR0eHR%2F8hNUKFo%2FB304Uui%2Fl%2FqJVEbdF5nDyK2BwgjoLR5d7edxLKMtgNunW9TbJ%2BGLV9iHCjiM6pv5brTvZuFJu%2B46iDUpPEDt5cqlctf1U3reO4Km%2FMcUX8GVq2rua0lWG&ua=&miniWua=HHnB_JDcbWxm1YICXHWnp2SwR5LW6W%2BQYNxFuxH3SNK5LQbvFKM7QJvQAXETokQrv30zErou7AkieajiRMjjBA5pdxkMJ0MU1GDHFr0PjpKRa7scWxaK%2BM3XD%2FCXy2muXzZkp&userId=2916901745&umidtoken=CJFLLxhLOp%2Bu3zV7QyKs806Y%2BvW9YrOA&secureDeviceType=ios&secureAppName=wenxue-activity-proxy&platform=116&appVer=1.0.5.0&placeId=111111&timestamp=1629015222&sqSv=1.0&sign=2533cb79da6874c1555fac73e7072980&key=sq_h5_gateway&_public=from%3DShuqiTab%26serviceWorkerOn%3D1%26stopPullRefresh%3D1%26sdk%3D14.6%26ustatus%3D1%26umidtoken%3DCJFLLxhLOp%252Bu3zV7QyKs806Y%252BvW9YrOA%26net_env%3Dwifi%26placeid%3D111111%26user_id%3D2916901745%26sn%3DE92DD36C442DA62AA22EF6B3333F044F331EA5AC%26msv%3D10.0.0%26brand%3DApple%26imei%3DF4272D0D67994A9AD162B30B05698204BD8445A3%26appVer%3D1.0.5.0%26manufacturer%3DApple%26session%3DeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyOTE2OTAxNzQ1IiwidXRkaWQiOiIiLCJpbWVpIjoiZmFzdF9GNDI3MkQwRDY3OTk0QTlBRDE2MkIzMEIwNTY5ODIwNEJEODQ0NUEzIiwic24iOiJmYXN0X0U5MkREMzZDNDQyREE2MkFBMjJFRjZCMzMzM0YwNDRGMzMxRUE1QUMiLCJleHAiOjE2MjkwMDEzODcsInVzZXJJZCI6IjI5MTY5MDE3NDUiLCJpYXQiOjE2Mjg0ODI5ODcsIm9haWQiOiIiLCJwbGF0Zm9ybSI6IjExNiJ9.Tm6DmTEVrc_PNRMR-fMouAqqdm9DBIJi_hYurOOaDHZJg2Qxm81N9PxKWggtzrwgkSPgoOJhBxehhLKFFvCMBg%26statusBarHeight%3D44.000000%26platform%3D116%26ver%3D210331%26mod%3DiPhoneXS%26wh%3D1125x2436%26utype%3Dvip%26utdid%3DYAzuwNlmZUMDAP8Knq70D7M9%26idfa%3D00000000-0000-0000-0000-000000000000";
         const request = {
             url: url,
             headers: headers,
